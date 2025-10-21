@@ -13,5 +13,5 @@
 ## Installation
 
 ```bash
-git clone https://github.com/your-username/smart-dialog-system.git
+git clone **https://github.com/your-username/smart-dialog-system.git
 cd smart-dialog-system
