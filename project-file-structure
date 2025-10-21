@@ -1,0 +1,17 @@
+smart-dialog-system/
+│
+├── components/
+│   ├── greeting.py
+│   ├── farewell.py
+│   ├── dialog_manager.py
+│   └── history.py
+│
+├── utils/
+│   ├── __init__.py
+│   ├── json_generator.py
+│   └── consistency_checker.py
+│
+├── main.py
+├── requirements.txt
+├── README.md
+└── .gitignore
