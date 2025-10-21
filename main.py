@@ -1,4 +1,3 @@
-# main.py - ИСПРАВЛЕННАЯ ВЕРСИЯ
 from components.greeting import get_greeting
 from components.farewell import get_farewell
 from components.dialog_manager import KnowledgeBasedDialogManager
@@ -7,7 +6,7 @@ from utils.json_generator import JSONGenerator
 import time
 
 def main():
-    print("УМНАЯ ДИАЛОГ-СИСТЕМА С ГРАФОМ ЗНАНИЙ")
+    print("Диалог - Система")
     print("=" * 50)
     
     # Инициализация
@@ -22,7 +21,6 @@ def main():
     history_manager.add_exchange("AI", greeting, "greeting")
     conversation_data = []
     
-    # Генерация диалога (4 вопроса)
     for i in range(4):
         question, topic = dialog_manager.get_next_question()
         print(f"Вопрос {i+1} [{topic}]: {question}")
@@ -35,7 +33,7 @@ def main():
             "topic": topic
         })
         
-        # Логичный ответ пользователя
+        # Ответ пользователя
         time.sleep(1)
         user_response = dialog_manager.generate_user_response(question, topic)
         print(f"Ответ: {user_response}\n")
@@ -77,4 +75,5 @@ def main():
     print(f"Согласованность: {consistency['score']}%")
 
 if __name__ == "__main__":
+
     main()
